@@ -1,3 +1,6 @@
 hello world
+<<<<<<< HEAD
 abcdefghijk
 lmnopqrstuv
+=======
+>>>>>>> parent of c9b95cf...  On branch main
