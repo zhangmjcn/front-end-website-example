@@ -12,7 +12,7 @@ Author: Jay Zhang
 Date: 2023-10-29
 
 ## Just visit this website to have a quick look:
-https://frontend.jay-zhang.com
+https://frontend.jay-zhang.com 
 
 Tags
 
