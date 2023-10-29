@@ -1,0 +1,188 @@
+body{
+    overflow-x: hidden;
+}
+
+div {
+  padding: 0;
+  margin:0;
+}
+
+.baseColor{
+    background-color: rgb(65,79,107);
+}
+
+.defaultSectionFormat{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+}
+
+
+.pageFont{
+    font-family: lato, Arial, serif;
+    font-weight: lighter;
+}
+
+.responsiveImage{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.NavSection{
+    display: flex;
+    flex-flow: row;
+    font-weight: bold;
+    font-style: italic;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+        #heroBg{
+            padding-top: 10em;
+        }
+}
+
+@media only screen and (max-width: 992px) {
+    #heroNav .NavSection{
+        background-color: rgba(65,79,107,0.9);
+        padding-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #page1Text{
+        background-color: rgba(240,240,240, 0.8);
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+.pageFrame{
+    min-height: 100vh;
+}
+
+.sticky{
+    position: sticky;
+}
+
+.NavSection ul{
+    margin: 0;
+    list-style-type: none;
+}
+
+
+.NavSection li{
+
+}
+.NavSection a{
+
+}
+
+.tabButtonContainer{
+    font-family: Oswald , Arial, serif;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    justify-content: flex-start;
+    padding-left: 7em;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.tabButton {
+    display: flex;
+    background-color: rgb(65,79,107);
+    color: #b0b4be;
+    align-items: center;
+    border: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 100%;
+
+}
+#idTabButton .active{
+    color:rgb(65,79,107);
+    background-color: #b0b4be;
+}
+.tabButton:hover, #idTabButton .active:hover {
+    color:rgb(65,79,107);
+    background-color: #efefef;
+}
+
+
+.footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    height: 5em;
+    background-color: rgb(65,79,107);
+}
+
+.tabContent{
+    display: none;
+    /*background-color: #b0b4be;*/
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tabScheduleTitleFont{
+    font-family: Oswald , Arial, serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #414f6b;
+}
+
+.copyright{
+    color: #63769d;
+    font-family: Lato, Arial, serif;
+    align-items: end;
+}
+
+#heroNav{
+
+}
+
+#heroNav a{
+    color: white;
+
+}
+
+#heroNav a:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+#pageNav ul{
+
+}
+
+#pageNav a{
+    color: #000;
+    cursor: pointer;
+}
+
+#pageNav a:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
