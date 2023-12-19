@@ -1,0 +1,30 @@
+namespace: front-end-website-example
+
+front-end-website-example:
+  defines: runnable
+  metadata:
+    name: front-end-website-example
+    description: >-
+      A front-end web application built with Next.js, React, TypeScript, and
+      Bootstrap.
+    icon: https://emojiapi.dev/api/v1/robot.svg
+  containers:
+    front-end-website-example:
+      image: env-4396.registry.local/front-end-website-example:main-9c25be8
+      build: .
+      dockerfile: Dockerfile.front-end-website-example
+  services:
+    http-server:
+      description: Port for serving the Next.js application
+      container: front-end-website-example
+      port: 3000
+      host-port: 3000
+      publish: true
+      protocol: tcp
+  connections: {}
+  variables: {}
+
+stack:
+  defines: group
+  members:
+    - front-end-website-example/front-end-website-example
